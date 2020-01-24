@@ -1,5 +1,5 @@
 resource "local_file" "urlfile" {
-    content     = "https://www.google.com"
+    content     = "https://www.yahoo.com"
     filename = "${path.module}/python-syn/urlfile"
 }
 
@@ -34,7 +34,7 @@ data "aws_iam_policy_document" "policy" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-  name               = "iam_for_lambda"
+  name               = format("%s_%s","iam_for_lambda",replace(replace(local_file.urlfile.content,"https://",""),".","_"))
   assume_role_policy = data.aws_iam_policy_document.policy.json
 }
 
@@ -58,7 +58,7 @@ resource "aws_lambda_function" "syn_lambda" {
 }
 
 resource "aws_cloudwatch_event_rule" "every_one_minute" {
-    name = "every-minute"
+    name = format("%s_%s","every-minute",replace(replace(local_file.urlfile.content,"https://",""),".","_"))
     description = "Fires every minute"
     schedule_expression = "rate(1 minute)"
 }
