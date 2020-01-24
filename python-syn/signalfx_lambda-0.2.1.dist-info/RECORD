@@ -1,0 +1,17 @@
+signalfx_lambda-0.2.1.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+signalfx_lambda-0.2.1.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+signalfx_lambda-0.2.1.dist-info/METADATA,sha256=QmhwxGcMyL0CiUW7O_ZpCk2D31e7Q7LMioEXoGq1sUY,11642
+signalfx_lambda-0.2.1.dist-info/RECORD,,
+signalfx_lambda-0.2.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+signalfx_lambda-0.2.1.dist-info/top_level.txt,sha256=Tr5ObliK4jIUjtR1vtsxYdw9EoriCQUUdwRRO0jY6jI,16
+signalfx_lambda-0.2.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+signalfx_lambda/__init__.py,sha256=_KZy_7Wa94kBeakZenZT36U83urZGFXlUmGlPqPv8uw,787
+signalfx_lambda/__pycache__/__init__.cpython-36.pyc,,
+signalfx_lambda/__pycache__/metrics.cpython-36.pyc,,
+signalfx_lambda/__pycache__/tracing.cpython-36.pyc,,
+signalfx_lambda/__pycache__/utils.cpython-36.pyc,,
+signalfx_lambda/__pycache__/version.cpython-36.pyc,,
+signalfx_lambda/metrics.py,sha256=iOpyw8nIaKhvS1_K3L_tdepEqw99i3RTCXXi77DWsio,3980
+signalfx_lambda/tracing.py,sha256=5_qg65ncQ6BrnUW7xVyycf11vOD6qjZMTPuYV5oUISU,1685
+signalfx_lambda/utils.py,sha256=vJ8AScXz-2DFNJ3SL2uEGJnuqNH8s4JFPETpt9ojebU,2388
+signalfx_lambda/version.py,sha256=kR-MKOZb_wiMtfro_8jt0FZlqBYhf9oFA3mbpCiJh_8,144
