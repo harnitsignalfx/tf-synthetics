@@ -3,6 +3,11 @@ resource "local_file" "urlfile" {
     filename = "${path.module}/python-syn/urlfile"
 }
 
+provider "signalfx" {
+    auth_token = "YOUR_TOKEN"
+    api_url = "https://api.signalfx.com"
+}
+
 data "archive_file" "init" {
   type        = "zip"
   source_dir = "${path.module}/python-syn"
@@ -51,7 +56,7 @@ resource "aws_lambda_function" "syn_lambda" {
 
   environment {
     variables = {
-      SIGNALFX_ACCESS_TOKEN = provider.signalfx.auth_token
+      SIGNALFX_ACCESS_TOKEN = "YOUR_TOKEN"
       SIGNALFX_ENDPOINT_URL = "https://ingest.signalfx.com"
     }
   }
@@ -79,10 +84,7 @@ resource "aws_lambda_permission" "allow_cloudwatch_to_call_syn_lambda" {
 
 
 
-provider "signalfx" {
-    auth_token = "RAdoUbMMBeRLp2IEOm52Fg"
-    api_url = "https://api.signalfx.com"
-}
+
 
 resource "signalfx_detector" "url_stopped_reporting" {
     name = "Url is not responding"
